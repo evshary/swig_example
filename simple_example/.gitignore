@@ -1,0 +1,5 @@
+*.o
+*.so
+example_wrap.c
+example.py
+__pycache__
