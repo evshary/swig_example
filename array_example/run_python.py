@@ -19,7 +19,12 @@ example.example_print_double_array(darray2, array_len)
 # ----- struct Array -----
 sarray = example.new_structArray(array_len)
 for i in range(0, array_len):
-    mystruct = example.example_assign_struct(i, 'a')
+    # Use function
+    #mystruct = example.example_assign_struct(i, 'a')
+    # Create structure variable
+    mystruct = example.MYSTRUCT()
+    mystruct.myint = i;
+    mystruct.mychar = 'a';
     example.structArray_setitem(sarray, i, mystruct)
 example.example_print_struct_array(sarray, array_len)
 
